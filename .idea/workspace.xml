@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9badb42b-4c81-40d0-81eb-39c8d98860c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/axis_kde.py" afterPath="$PROJECT_DIR$/code/axis_kde.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/neareast_neighbor.py" afterPath="$PROJECT_DIR$/code/neareast_neighbor.py" />
     </list>
     <ignored path="facebook_check_in_prediction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="axis_kde.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="axis_kde.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/axis_kde.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1714287">
+            <state vertical-scroll-proportion="0.0">
               <caret line="72" column="7" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="11" />
+              <folding>
+                <element signature="e#102#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neareast_neighbor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/neareast_neighbor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6571429">
+              <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -52,6 +64,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/code/axis_kde.py" />
+        <option value="$PROJECT_DIR$/code/neareast_neighbor.py" />
       </list>
     </option>
   </component>
@@ -302,8 +315,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/axis_kde.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1714287">
+        <state vertical-scroll-proportion="0.0">
           <caret line="72" column="7" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="11" />
+          <folding>
+            <element signature="e#102#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/neareast_neighbor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6571429">
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
           <folding />
         </state>
       </provider>

@@ -91,7 +91,7 @@ class Neighbor:
             else:
                 near_dic[place] = weight
         near_list = [(key, value) for key, value in near_dic.iteritems()]
-        near_list.sort(key=lambda x:x[1], reverse=True)
+        near_list.sort(key=lambda x: x[1], reverse=True)
         return [x[0] for x in near_list[:top]], [x[1] for x in near_list[:top]]
 
     def measure(self, record):
