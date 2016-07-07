@@ -70,7 +70,7 @@ class AxisDensity:
     # [node_num, neighbor_prob], x, y, accuracy, day_hour, week_day, year, month_day, day_of_year
     band_width = [0.3, 0.72, 0.7, 0.5, 1.07, 2.3, 0.7, 3.0]
     weights = [0.88, 3.0, 1.4, 1.9, 0.9, 1.0, 1.5, 5.5, 0.5, 0.25]
-    kernel = ["gaussian", "gaussian", "cosine", "gaussian", "gaussian", "exponential", "gaussian", "gaussian"]
+    kernels = ["gaussian", "gaussian", "cosine", "gaussian", "gaussian", "exponential", "gaussian", "gaussian"]
     smooth_factors = [50, 50, 50, 50, 80, 80, 80, 50]
 
     def __init__(self, index, neighbor):
@@ -88,7 +88,7 @@ class AxisDensity:
             den_rec_list = list_den_ftr(record_list)
             ftr_list = zip(*den_rec_list)
             for n in range(len(ftr_list)):
-                kdes.append(self.fit_kde(ftr_list[n], self.band_width[n] * self.smooth_func(len(record_list), self.smooth_factors[n]), self.kernel[n]))
+                kdes.append(self.fit_kde(ftr_list[n], self.band_width[n] * self.smooth_func(len(record_list), self.smooth_factors[n]), self.kernels[n]))
             self.place_kde[place_id] = kdes
             self.place_size[place_id] = np.log(len(record_list))
 
@@ -171,7 +171,7 @@ class AxisDensity:
         den_rec_list = list_den_ftr(record_list)
         ftr_list = zip(*den_rec_list)
         self.draw_1d_density(ftr_list[dim],
-            self.band_width[dim] * self.smooth_func(len(record_list), self.smooth_factors[dim]), self.kernel[dim])
+                             self.band_width[dim] * self.smooth_func(len(record_list), self.smooth_factors[dim]), self.kernels[dim])
 
     @staticmethod
     def draw_1d_density(attr, bandwidth, kernel="gaussian"):
