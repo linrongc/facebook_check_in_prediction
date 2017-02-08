@@ -2,4 +2,4 @@
 
 KNN + KDE solution for facebook check in prediction challenge in kaggle
 
-Code from a kaggle newbie...
+Single model which ranked 17/1212 
